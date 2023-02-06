@@ -273,6 +273,16 @@ NAME            	NAMESPACE	REVISION	UPDATED                            	STATUS  
 helm-consul-demo	default  	1       	2023-02-05 15:20:23.59376 -0800 PST	deployed	consul-1.0.3	1.14.4
 ```
 
+- Verified helm-consul-demo-consul-ui by enabling kubectl port forwarding (EG `kubectl port-forward helm-consul-demo-consul-ui 28015:27017`)
+For example setup port forwarding to http://localhost:60590
+
+![ UI ](./images/Screen%20Shot%202023-02-05%20at%2010.36.35%20PM.png)
+![ UI ](./images/Screen%20Shot%202023-02-05%20at%2010.36.42%20PM.png)
+![ UI ](./images/Screen%20Shot%202023-02-05%20at%2010.36.48%20PM.png)
+![ UI ](./images/Screen%20Shot%202023-02-05%20at%2010.36.55%20PM.png)
+![ UI ](./images/Screen%20Shot%202023-02-05%20at%2010.37.02%20PM.png)
+
+
 ### AWS EKS
 
 Even though the cluster was successfully created using cdktf, installing helm consul was problematic
